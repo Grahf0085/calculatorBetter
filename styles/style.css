@@ -121,9 +121,27 @@ footer {
 .calculator {
     display: flex;
     flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .add, .sub, .mul, .div {
     display: flex;
     flex-direction: row;
+    margin: 0;
+}
+
+.add {
+    background-color: rgba(0,124,255, .5);
+}
+
+.sub {
+    background-color: rgba(18,134,255, .4);
+}
+
+.mul {
+    background-color:rgba(34,142,255, .3);
+}
+
+.div {
+    background-color: rgba(58,154,255, .2);
 }
