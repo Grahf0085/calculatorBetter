@@ -1,5 +1,13 @@
-// import functions and grab DOM elements
+let mathResult;
+let result = document.getElementById('add-result');
+const button = document.getElementById('do-it');
 
-// initialize state
+button.addEventListener('click', () => {
 
-// set event listeners to update state and DOM
+    const firstNumber = document.getElementById('first-input');
+    const secondNumber = document.getElementById('second-input');
+
+    mathResult = Number(firstNumber.value) + Number(secondNumber.value);
+
+    result.textContent = mathResult; 
+});
