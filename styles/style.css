@@ -120,48 +120,21 @@ footer {
 
 .calculator {
     display: flex;
-    flex-direction: column;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.add, .sub, .mul, .div {
-    display: flex;
     flex-direction: row;
-    margin: 0;
-    padding: 5px;
-}
-
-.add {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgba(0,124,255, .5);
+    border-radius: 10px;
     justify-content: start;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.sub {
-    background-color: rgba(0,124,255, .4);
-    justify-content: start;
-}
-
-.mul {
-    background-color:rgba(0,124,255, .3);
-    justify-content: start;
-}
-
-.div {
-    background-color: rgba(0,124,255, .2);
-    justify-content: start;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 input {
     width: 100px;
 }
 
-#result-add, #result-sub, #result-mul, #result-div {
+#result{
     font-weight: bolder;
 }
 
-button {
+.dropdown {
+    margin: 10px;
 }

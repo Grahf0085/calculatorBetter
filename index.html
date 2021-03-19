@@ -25,37 +25,18 @@
 
         <section class="calculator">
 
-            <section class="add">
-                <input id="first-add">
-                <div>+</div>
-                <input id="second-add">
-                <button id="do-add">Is....</button>
-                <div id ="result-add"></div>
-            </section>
-
-            <section class="sub">
-                <input id="first-sub">
-                <div>-</div>
-                <input id="second-sub">
-                <button id="do-sub">Is....</button>
-                <div id ="result-sub"></div>
-            </section>
-
-            <section class="mul">
-                <input id="first-mul">
-                <div>*</div>
-                <input id="second-mul">
-                <button id="do-mul">Is....</button>
-                <div id ="result-mul"></div>
-            </section>
-
-            <section class="div">
-                <input id="first-div">
-                <div>/</div>
-                <input id="second-div">
-                <button id="do-div">Is....</button>
-                <div id ="result-div"></div>
-            </section>
+                <form>
+                    <select class = "dropdown">
+                       <option id = "do-add">Add</option>
+                       <option id = "do-sub">Subtract</option>
+                       <option id = "do-mul">Multiply</option>
+                       <option id = "do-div">Divide</option>
+                    </select>
+                 </form>
+                <input id="first-input">
+                and
+                <input id="second-input">
+                <div id ="result"></div>
 
         </section>
     </main>
@@ -64,6 +45,7 @@
     </footer>
 
     <script type="module" src="app.js"></script>
+    
 </body>
 
 </html>
