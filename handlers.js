@@ -1,3 +1,10 @@
+import {
+    add,
+    sub,
+    div,
+    mul,
+} from './utils.js';
+
 let mathResult;
 
 export function addClick() {
@@ -6,7 +13,7 @@ export function addClick() {
     const secondNumber = document.getElementById('second-input');
     let result = document.getElementById('result');
 
-    mathResult = Number(firstNumber.value) + Number(secondNumber.value);
+    mathResult = add(Number(firstNumber.value), Number(secondNumber.value));
 
     result.textContent = mathResult; 
 }
@@ -17,7 +24,7 @@ export function subClick() {
     const secondNumber = document.getElementById('second-input');
     let result = document.getElementById('result');
 
-    mathResult = Number(firstNumber.value) - Number(secondNumber.value);
+    mathResult = sub(Number(firstNumber.value), Number(secondNumber.value));
 
     result.textContent = mathResult; 
 }
@@ -28,7 +35,7 @@ export function mulClick() {
     const secondNumber = document.getElementById('second-input');
     let result = document.getElementById('result');
 
-    mathResult = Number(firstNumber.value) * Number(secondNumber.value);
+    mathResult = mul(Number(firstNumber.value), Number(secondNumber.value));
 
     result.textContent = mathResult; 
 }
@@ -39,7 +46,7 @@ export function divClick() {
     const secondNumber = document.getElementById('second-input');
     let result = document.getElementById('result');
 
-    mathResult = Number(firstNumber.value) / Number(secondNumber.value);
+    mathResult = div(Number(firstNumber.value), Number(secondNumber.value));
 
     result.textContent = mathResult; 
 }
